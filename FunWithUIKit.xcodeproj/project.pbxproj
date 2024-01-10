@@ -11,6 +11,8 @@
 		AB9C51F02B4D3A480070F990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C51EF2B4D3A480070F990 /* SceneDelegate.swift */; };
 		AB9C51F22B4D3A480070F990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C51F12B4D3A480070F990 /* ViewController.swift */; };
 		AB9C51F72B4D3A490070F990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9C51F62B4D3A490070F990 /* Assets.xcassets */; };
+		AB9C52092B4E2D490070F990 /* RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C52082B4E2D490070F990 /* RoundCorner.swift */; };
+		AB9C520F2B4E37F70070F990 /* ZStack in Frameworks */ = {isa = PBXBuildFile; productRef = AB9C520E2B4E37F70070F990 /* ZStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		AB9C51F12B4D3A480070F990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB9C51F62B4D3A490070F990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9C51FB2B4D3A490070F990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9C52082B4E2D490070F990 /* RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorner.swift; sourceTree = "<group>"; };
+		AB9C520C2B4E37160070F990 /* ZStack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ZStack; path = ../ZStack; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9C520F2B4E37F70070F990 /* ZStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +41,10 @@
 		AB9C51E12B4D3A480070F990 = {
 			isa = PBXGroup;
 			children = (
+				AB9C520C2B4E37160070F990 /* ZStack */,
 				AB9C51EC2B4D3A480070F990 /* FunWithUIKit */,
 				AB9C51EB2B4D3A480070F990 /* Products */,
+				AB9C520D2B4E37F70070F990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,10 +62,18 @@
 				AB9C51ED2B4D3A480070F990 /* AppDelegate.swift */,
 				AB9C51EF2B4D3A480070F990 /* SceneDelegate.swift */,
 				AB9C51F12B4D3A480070F990 /* ViewController.swift */,
+				AB9C52082B4E2D490070F990 /* RoundCorner.swift */,
 				AB9C51F62B4D3A490070F990 /* Assets.xcassets */,
 				AB9C51FB2B4D3A490070F990 /* Info.plist */,
 			);
 			path = FunWithUIKit;
+			sourceTree = "<group>";
+		};
+		AB9C520D2B4E37F70070F990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +92,9 @@
 			dependencies = (
 			);
 			name = FunWithUIKit;
+			packageProductDependencies = (
+				AB9C520E2B4E37F70070F990 /* ZStack */,
+			);
 			productName = FunWithUIKit;
 			productReference = AB9C51EA2B4D3A480070F990 /* FunWithUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +151,7 @@
 				AB9C51F22B4D3A480070F990 /* ViewController.swift in Sources */,
 				AB9C51EE2B4D3A480070F990 /* AppDelegate.swift in Sources */,
 				AB9C51F02B4D3A480070F990 /* SceneDelegate.swift in Sources */,
+				AB9C52092B4E2D490070F990 /* RoundCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +357,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB9C520E2B4E37F70070F990 /* ZStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB9C51E22B4D3A480070F990 /* Project object */;
 }
